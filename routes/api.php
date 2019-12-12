@@ -20,3 +20,14 @@ Route::resource('users', 'UserController');
 Route::resource('abonnes', 'AbonneController');
 
 Route::resource('abonnements', 'AbonnementController');
+
+Route::resource('armoires', 'ArmoireController');
+Route::resource('categories', 'CategorieController');
+Route::resource('commentaires', 'CommentaireController');
+Route::resource('etats', 'EtatController');
+Route::resource('exemplaires', 'ExemplaireController');
+Route::resource('failedjobs', 'FailedjobController');
+Route::resource('notes', 'NoteController');
+Route::resource('oeuvres', 'OeuvreController');
+Route::resource('sections', 'SectionController');
+Route::resource('sectionarmoires', 'SectionArmoireController');
