@@ -24,7 +24,9 @@ class CreateAbonneTable extends Migration {
 			$table->string('tel', 9);
 			$table->string('login', 20);
 			$table->string('mdp', 400);
-			$table->timestamps();
+            $table->boolean('remember_me')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

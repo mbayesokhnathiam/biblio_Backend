@@ -11,20 +11,20 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Note
- * 
+ *
  * @property int $id
  * @property int $NombreEtoile
  * @property int $abonne_id
  * @property int $oeuvre_id
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \App\Models\Abonne $abonne
  * @property \App\Models\Oeuvre $oeuvre
  *
  * @package App\Models
  */
-class Note extends Eloquent
+class Note extends BaseModel
 {
 	protected $table = 'note';
 

@@ -20,6 +20,7 @@ class CreateFailedJobsTable extends Migration {
 			$table->text('payload');
 			$table->text('exception');
 			$table->timestamp('failed_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->softDeletes();
 		});
 	}
 

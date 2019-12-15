@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Oeuvre
- * 
+ *
  * @property int $id
  * @property string $numeroISBN
  * @property string $titre
@@ -26,7 +26,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * @property int $section_id
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \App\Models\Categorie $categorie
  * @property \App\Models\Section $section
  * @property \Illuminate\Database\Eloquent\Collection $commentaires
@@ -35,7 +35,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  *
  * @package App\Models
  */
-class Oeuvre extends Eloquent
+class Oeuvre extends BaseModel
 {
 	protected $table = 'oeuvre';
 

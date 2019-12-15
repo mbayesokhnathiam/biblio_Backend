@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class FailedJob
- * 
+ *
  * @property int $id
  * @property string $connection
  * @property string $queue
@@ -21,7 +21,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  *
  * @package App\Models
  */
-class FailedJob extends Eloquent
+class FailedJob extends BaseModel
 {
 	public $timestamps = false;
 

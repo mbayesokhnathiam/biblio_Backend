@@ -16,7 +16,8 @@ class CreateSectionTable extends Migration {
 		{
 			$table->bigInteger('id', true)->unsigned();
 			$table->string('libelle', 30);
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

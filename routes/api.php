@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,17 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('notConnected', 'AuthController@notConnected')->name('notconnected');
+Route::post('login', 'AuthController@login');
+Route::get('logout', 'AuthController@logout');
+Route::get('/user', function (Request $request) {
+    return auth()->guard('api')->user();
+});
+
+//Route::middleware('auth:api')->group(function () {
+//    Route::get('logout', 'AuthController@logout');
+//});
+
 Route::resource('users', 'UserController');
 Route::resource('abonnes', 'AbonneController');
 

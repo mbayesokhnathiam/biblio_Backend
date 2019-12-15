@@ -21,7 +21,8 @@ class CreateAbonnementTable extends Migration {
 			$table->date('DateReelleFinAbonnement');
 			$table->boolean('etat');
 			$table->bigInteger('abonne_id')->unsigned()->index('abonnement_abonne_id_foreign');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

@@ -18,7 +18,9 @@ class CreateNoteTable extends Migration {
 			$table->integer('NombreEtoile');
 			$table->bigInteger('abonne_id')->unsigned()->index('note_abonne_id_foreign');
 			$table->bigInteger('oeuvre_id')->unsigned()->index('note_oeuvre_id_foreign');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
+
 		});
 	}
 

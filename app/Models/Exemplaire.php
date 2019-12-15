@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Exemplaire
- * 
+ *
  * @property int $id
  * @property string $numero
  * @property \Carbon\Carbon $dateAcquisition
@@ -19,14 +19,14 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * @property int $abonnement_id
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \App\Models\Abonnement $abonnement
  * @property \App\Models\Oeuvre $oeuvre
  * @property \Illuminate\Database\Eloquent\Collection $etats
  *
  * @package App\Models
  */
-class Exemplaire extends Eloquent
+class Exemplaire extends BaseModel
 {
 	protected $table = 'exemplaire';
 

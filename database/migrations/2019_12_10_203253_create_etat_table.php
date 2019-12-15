@@ -18,7 +18,8 @@ class CreateEtatTable extends Migration {
 			$table->text('libelle', 65535);
 			$table->date('dateEdition');
 			$table->bigInteger('exemplaire_id')->unsigned()->index('etat_exemplaire_id_foreign');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

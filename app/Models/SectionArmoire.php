@@ -11,19 +11,19 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class SectionArmoire
- * 
+ *
  * @property int $id
  * @property int $section_id
  * @property int $armoire_id
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \App\Models\Armoire $armoire
  * @property \App\Models\Section $section
  *
  * @package App\Models
  */
-class SectionArmoire extends Eloquent
+class SectionArmoire extends BaseModel
 {
 	protected $table = 'section_armoire';
 

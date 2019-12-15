@@ -17,7 +17,8 @@ class CreateArmoireTable extends Migration {
 			$table->bigInteger('id', true)->unsigned();
 			$table->string('numero', 20)->unique();
 			$table->integer('nbreEtage');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

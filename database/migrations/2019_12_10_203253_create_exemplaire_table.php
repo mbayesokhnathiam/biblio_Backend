@@ -19,7 +19,8 @@ class CreateExemplaireTable extends Migration {
 			$table->date('dateAcquisition');
 			$table->bigInteger('oeuvre_id')->unsigned()->index('exemplaire_oeuvre_id_foreign');
 			$table->bigInteger('abonnement_id')->unsigned()->index('exemplaire_abonnement_id_foreign');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

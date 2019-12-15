@@ -26,7 +26,8 @@ class CreateOeuvreTable extends Migration {
 			$table->text('image', 65535);
 			$table->bigInteger('categorie_id')->unsigned()->index('oeuvre_categorie_id_foreign');
 			$table->bigInteger('section_id')->unsigned()->index('oeuvre_section_id_foreign');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

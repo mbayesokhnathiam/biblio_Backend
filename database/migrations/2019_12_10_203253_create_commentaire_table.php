@@ -18,7 +18,8 @@ class CreateCommentaireTable extends Migration {
 			$table->string('libelle', 30);
 			$table->bigInteger('abonne_id')->unsigned()->index('commentaire_abonne_id_foreign');
 			$table->bigInteger('oeuvre_id')->unsigned()->index('commentaire_oeuvre_id_foreign');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

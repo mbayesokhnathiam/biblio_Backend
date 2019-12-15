@@ -11,18 +11,18 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Armoire
- * 
+ *
  * @property int $id
  * @property string $numero
  * @property int $nbreEtage
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \Illuminate\Database\Eloquent\Collection $sections
  *
  * @package App\Models
  */
-class Armoire extends Eloquent
+class Armoire extends BaseModel
 {
 	protected $table = 'armoire';
 

@@ -17,7 +17,8 @@ class CreateSectionArmoireTable extends Migration {
 			$table->bigInteger('id', true)->unsigned();
 			$table->bigInteger('section_id')->unsigned()->index('section_armoire_section_id_foreign');
 			$table->bigInteger('armoire_id')->unsigned()->index('section_armoire_armoire_id_foreign');
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 

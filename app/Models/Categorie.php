@@ -11,17 +11,17 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Categorie
- * 
+ *
  * @property int $id
  * @property string $libelle
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \Illuminate\Database\Eloquent\Collection $oeuvres
  *
  * @package App\Models
  */
-class Categorie extends Eloquent
+class Categorie extends BaseModel
 {
 	protected $table = 'categorie';
 

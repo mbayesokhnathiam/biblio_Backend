@@ -11,18 +11,18 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Section
- * 
+ *
  * @property int $id
  * @property string $libelle
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \Illuminate\Database\Eloquent\Collection $oeuvres
  * @property \Illuminate\Database\Eloquent\Collection $armoires
  *
  * @package App\Models
  */
-class Section extends Eloquent
+class Section extends BaseModel
 {
 	protected $table = 'section';
 

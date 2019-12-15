@@ -11,19 +11,19 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Etat
- * 
+ *
  * @property int $id
  * @property string $libelle
  * @property \Carbon\Carbon $dateEdition
  * @property int $exemplaire_id
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
+ *
  * @property \App\Models\Exemplaire $exemplaire
  *
  * @package App\Models
  */
-class Etat extends Eloquent
+class Etat extends BaseModel
 {
 	protected $table = 'etat';
 

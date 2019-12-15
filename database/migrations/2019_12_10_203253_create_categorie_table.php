@@ -16,7 +16,8 @@ class CreateCategorieTable extends Migration {
 		{
 			$table->bigInteger('id', true)->unsigned();
 			$table->string('libelle', 50);
-			$table->timestamps();
+            $table->timestamps();
+            $table->softDeletes();
 		});
 	}
 
